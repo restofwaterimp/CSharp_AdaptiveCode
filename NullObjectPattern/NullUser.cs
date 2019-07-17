@@ -6,13 +6,11 @@ using System.Threading.Tasks;
 
 namespace NullObjectPattern
 {
-    class Program
+    public class NullUser : IUser
     {
-        static IUserRepository userRepository = new IUserRepository();
-
-        static void Main(string[] args)
+        public void IncrementSesssionTicket()
         {
-
+            // Nothing
         }
     }
 }

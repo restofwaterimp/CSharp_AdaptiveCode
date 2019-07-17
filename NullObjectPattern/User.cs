@@ -6,13 +6,17 @@ using System.Threading.Tasks;
 
 namespace NullObjectPattern
 {
-    class Program
+    class User : IUser
     {
-        static IUserRepository userRepository = new IUserRepository();
+        public Guid ID { get; set; }
 
-        static void Main(string[] args)
+        public User(Guid guid)
         {
 
+        }
+        public void IncrementSesssionTicket()
+        {
+            // None
         }
     }
 }
