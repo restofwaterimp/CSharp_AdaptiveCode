@@ -16,17 +16,7 @@ namespace NullObjectPattern
             // Null Objedt パターンを適用しないと、ここで例外がスローされる
             user.IncrementSesssionTicket();
 
-            string userName;
-            if (!user.IsNull)
-            {
-                userName = user.Name;
-            }
-            else
-            {
-                userName = "unknown";
-            }
-
-            Console.WriteLine("The user's name is {0}", userName);
+            Console.WriteLine("The user's name is {0}", user.Name);
 
             Console.ReadKey();
         }

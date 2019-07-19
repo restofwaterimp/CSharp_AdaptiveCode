@@ -18,6 +18,8 @@ namespace NullObjectPattern
             }
         }
 
+        public string Name { get; }
+
         private DateTime sessionExpiry;
 
         public User(Guid guid)

@@ -13,11 +13,11 @@ namespace NullObjectPattern
             // Nothing
         }
 
-        public bool IsNull
+        public string Name
         {
             get
             {
-                return true;
+                return "unknown";
             }
         }
     }

@@ -10,7 +10,7 @@ namespace NullObjectPattern
     {
         void IncrementSesssionTicket();
 
-        bool IsNull
+        string Name
         {
             get;
         }
