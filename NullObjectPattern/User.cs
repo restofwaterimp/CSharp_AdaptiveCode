@@ -10,6 +10,16 @@ namespace NullObjectPattern
     {
         public Guid ID { get; set; }
 
+        public bool IsNull
+        {
+            get
+            {
+                return false;
+            }
+        }
+
+        private DateTime sessionExpiry;
+
         public User(Guid guid)
         {
 

@@ -9,5 +9,10 @@ namespace NullObjectPattern
     public interface IUser
     {
         void IncrementSesssionTicket();
+
+        bool IsNull
+        {
+            get;
+        }
     }
 }

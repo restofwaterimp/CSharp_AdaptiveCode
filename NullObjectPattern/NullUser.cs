@@ -12,5 +12,13 @@ namespace NullObjectPattern
         {
             // Nothing
         }
+
+        public bool IsNull
+        {
+            get
+            {
+                return true;
+            }
+        }
     }
 }
