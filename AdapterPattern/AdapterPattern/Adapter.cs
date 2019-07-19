@@ -4,11 +4,17 @@ using System.Text;
 
 namespace AdapterPattern
 {
-    public class Adapter : Adaptee
+    public class Adapter : IExpectedInterface
     {
+        public Adapter(TargetClass target)
+        {
+            this.target = target;
+        }
         public void MethodA()
         {
-            MethodB();
+            target.MethodB();
         }
+
+        private TargetClass target;
     }
 }

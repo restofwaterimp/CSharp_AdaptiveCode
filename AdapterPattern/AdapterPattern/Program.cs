@@ -4,7 +4,8 @@ namespace AdapterPattern
 {
     class Program
     {
-        static Adapter dependency = new Adapter();
+        static IExpectedInterface dependency = new Adapter(new TargetClass());
+        //static Adapter dependency = new Adapter();
         static void Main(string[] args)
         {
             dependency.MethodA();
